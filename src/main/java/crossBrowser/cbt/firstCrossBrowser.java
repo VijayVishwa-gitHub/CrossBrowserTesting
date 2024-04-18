@@ -24,7 +24,7 @@ public class firstCrossBrowser
 	 DesiredCapabilities cap = new DesiredCapabilities();
 	 cap.setCapability(CapabilityType.BROWSER_NAME, "MicrosoftEdge");
 	 
-	 WebDriver driver = new RemoteWebDriver(new URI("http://192.168.150.188:4444").toURL(), cap);
+	 WebDriver driver = new RemoteWebDriver(new URI("http://192.168.1.27:4444/").toURL(), cap);
 	 driver.get("https://www.google.co.in/");
 	 driver.findElement(By.name("q")).sendKeys("Donald Trumph");
 	 Actions ac = new Actions(driver);                    // http://192.168.150.188:4444

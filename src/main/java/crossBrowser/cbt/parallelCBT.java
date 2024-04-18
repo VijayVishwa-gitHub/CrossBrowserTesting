@@ -15,7 +15,7 @@ public class parallelCBT {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setBrowserName("chrome");
 		 
-		 WebDriver driver = new RemoteWebDriver(new URI("http://192.168.150.188:4444").toURL(), cap);
+		 WebDriver driver = new RemoteWebDriver(new URI("http://192.168.1.27:4444/").toURL(), cap);
 		 driver.get("https://www.amazon.in/");
 		 System.out.println(driver.getTitle());
 		 driver.quit();
